@@ -4,7 +4,6 @@ from openenv.core.env_server import Environment
 from models import SupportAction, SupportObservation, SupportState
 
 
-# ✅ DATASET (expanded)
 TICKETS = [
     # Billing
     {"query": "I was charged twice for my order", "category": "billing", "priority": "high", "keywords": ["refund", "charged", "double"]},
@@ -25,14 +24,14 @@ TICKETS = [
     {"query": "Cannot reset my password", "category": "general", "priority": "medium", "keywords": ["password"]},
     {"query": "How do I delete my account?", "category": "general", "priority": "low", "keywords": ["delete"]},
 
-    # Edge cases 🔥
+    # Edge cases
     {"query": "Why was I charged AND the app crashed?", "category": "technical", "priority": "high", "keywords": ["crash", "charged"]},
     {"query": "This service is terrible!!!", "category": "general", "priority": "medium", "keywords": ["bad", "complaint"]},
     {"query": "Thanks, my issue is already solved", "category": "general", "priority": "low", "keywords": ["thanks"]},
 ]
 
 
-class CustomerSupportEnv(Environment):  # ✅ FIX: was `Env` (undefined), now `Environment`
+class CustomerSupportEnv(Environment):
 
     def __init__(self):
         self._state = SupportState()
@@ -41,7 +40,6 @@ class CustomerSupportEnv(Environment):  # ✅ FIX: was `Env` (undefined), now `E
         self._current = None
         self.history = []
 
-    # ✅ Query variation (IMPORTANT)
     def augment_query(self, q):
         variations = [
             q,
@@ -53,7 +51,6 @@ class CustomerSupportEnv(Environment):  # ✅ FIX: was `Env` (undefined), now `E
         return random.choice(variations)
 
     def reset(self, **kwargs):
-        # ✅ Random sampling with duplicates (more variation)
         self._tickets = random.choices(TICKETS, k=20)
         self._index = 0
         self.history = []
@@ -66,8 +63,6 @@ class CustomerSupportEnv(Environment):  # ✅ FIX: was `Env` (undefined), now `E
         )
 
         self._current = self._tickets[self._index]
-
-        # ✅ Apply variation
         self._current["query"] = self.augment_query(self._current["query"])
 
         return SupportObservation(
@@ -82,7 +77,7 @@ class CustomerSupportEnv(Environment):  # ✅ FIX: was `Env` (undefined), now `E
             return SupportObservation(
                 ticket_id="end",
                 customer_query="",
-                reward=0.0,
+                reward=0.5,  # ✅ was 0.0 (invalid)
                 done=True
             )
 
@@ -94,7 +89,6 @@ class CustomerSupportEnv(Environment):  # ✅ FIX: was `Env` (undefined), now `E
         VALID_CATEGORIES = ["billing", "technical", "general"]
         VALID_PRIORITIES = ["low", "medium", "high"]
 
-        # ❌ invalid inputs
         if action.priority not in VALID_PRIORITIES:
             reward -= 0.2
         if action.category not in VALID_CATEGORIES:
@@ -102,51 +96,41 @@ class CustomerSupportEnv(Environment):  # ✅ FIX: was `Env` (undefined), now `E
         elif action.category != expected["category"]:
             reward -= 0.1
 
-        # ✅ Category scoring
         if action.category == expected["category"]:
             reward += 0.4
         elif action.category in VALID_CATEGORIES:
             reward += 0.2
 
-        # ✅ Priority scoring
         if action.priority == expected["priority"]:
             reward += 0.2
 
-        # ✅ Response relevance
         response = (action.response or "").lower()
 
         if any(k in response for k in expected["keywords"]):
             reward += 0.2
 
-        # ✅ Tone
         if any(word in response for word in ["sorry", "thank", "please"]):
             reward += 0.1
 
-        # ✅ Special case
         if "already solved" in expected["query"].lower():
             if "glad" in response or "resolved" in response:
-                reward += 0.3
+                reward += 0.2  # ✅ reduced from 0.3 to avoid hitting 1.0
 
-        # ❌ too short
         if len(response.strip()) < 10:
             reward -= 0.2
 
-        # ✅ memory
         self.history.append({
             "query": expected["query"],
             "action": action.category,
             "reward": reward
         })
 
-        # ✅ update state
         self._state.tickets_processed += 1
 
-        # 👉 next ticket
         self._index += 1
         done = self._index >= len(self._tickets)
 
         if done:
-            reward += 0.1
             self._current = None
             query = ""
         else:
@@ -154,7 +138,8 @@ class CustomerSupportEnv(Environment):  # ✅ FIX: was `Env` (undefined), now `E
             self._current["query"] = self.augment_query(self._current["query"])
             query = self._current["query"]
 
-        reward = max(0.0, min(reward, 1.0))
+        # ✅ Clamp strictly between 0 and 1 (exclusive)
+        reward = max(0.05, min(reward, 0.95))
 
         return SupportObservation(
             ticket_id=str(self._index),

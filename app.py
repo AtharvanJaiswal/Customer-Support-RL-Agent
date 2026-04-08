@@ -1,13 +1,9 @@
-from fastapi import FastAPI
-import subprocess
+from openenv.core.env_server import create_fastapi_app
+from environment import CustomerSupportEnv
+from models import SupportAction, SupportObservation
 
-app = FastAPI()
-
-@app.get("/")
-def run_agent():
-    result = subprocess.run(
-        ["python", "inference.py"],
-        capture_output=True,
-        text=True
-    )
-    return {"output": result.stdout}
+app = create_fastapi_app(
+    CustomerSupportEnv,
+    SupportAction,
+    SupportObservation
+)

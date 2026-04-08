@@ -1,6 +1,6 @@
 import uuid
 import random
-from openenv.core.env_server import Environment
+from openenv.core.env import Env
 from models import SupportAction, SupportObservation, SupportState
 
 
@@ -32,7 +32,7 @@ TICKETS = [
 ]
 
 
-class CustomerSupportEnv(Environment):
+class CustomerSupportEnv(Env):
 
     def __init__(self):
         self._state = SupportState()

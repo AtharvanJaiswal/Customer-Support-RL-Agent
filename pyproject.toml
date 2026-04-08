@@ -1,0 +1,17 @@
+[project]
+name = "customer-support-rl-agent"
+version = "0.1.0"
+description = "Customer Support RL Agent using OpenEnv"
+authors = [
+    {name = "Athi"}
+]
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "openai",
+    "openenv"
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"

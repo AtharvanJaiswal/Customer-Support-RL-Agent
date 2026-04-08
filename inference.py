@@ -9,15 +9,14 @@ from openai import OpenAI
 API_BASE_URL = os.getenv("API_BASE_URL", "https://api.openai.com/v1")
 MODEL_NAME = os.getenv("MODEL_NAME", "gpt-4o-mini")
 
-# fallback if token missing (HF safe)
 HF_TOKEN = os.getenv("HF_TOKEN")
+if HF_TOKEN is None:
+    raise ValueError("HF_TOKEN environment variable is required")  # ✅ FIX: guidelines mandate this
 
-client = None
-if HF_TOKEN:
-    client = OpenAI(
-        base_url=API_BASE_URL,
-        api_key=HF_TOKEN
-    )
+client = OpenAI(
+    base_url=API_BASE_URL,
+    api_key=HF_TOKEN
+)
 
 MAX_STEPS = 5
 
@@ -82,9 +81,6 @@ def fallback_response(query: str):
 # API RESPONSE (SAFE)
 # -----------------------------
 def generate_response(query: str):
-    if client is None:
-        return fallback_response(query)
-
     prompt = f"""
 You are a professional customer support agent.
 Respond clearly, politely, and helpfully in ONE sentence.

@@ -5,5 +5,4 @@ trl
 torch
 fastapi
 uvicorn
-openenv---
-
+git+https://github.com/meta-pytorch/OpenEnv.git

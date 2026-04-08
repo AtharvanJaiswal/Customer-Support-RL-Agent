@@ -32,7 +32,7 @@ TICKETS = [
 ]
 
 
-class CustomerSupportEnv(Env):
+class CustomerSupportEnv(Environment):
 
     def __init__(self):
         self._state = SupportState()

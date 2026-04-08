@@ -13,5 +13,7 @@ class SupportObservation(Observation):
     reward: Optional[float] = None
 
 class SupportState(State):
+    episode_id: Optional[str] = None  # ✅ FIX: was missing, used in environment.py reset()
+    step_count: int = 0
     tickets_processed: int = 0
     total_tickets: int = 0

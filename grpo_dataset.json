@@ -1,0 +1,702 @@
+[
+  {
+    "query": "I want a refund for my subscription",
+    "category": "general",
+    "priority": "medium",
+    "response": "Thank you for your continued support!\n- I am a freelance writer.\n- I will continue to support my content.",
+    "reward": 0.5
+  },
+  {
+    "query": "Login is not working on my phone",
+    "category": "general",
+    "priority": "medium",
+    "response": "Please contact me for any questions.\nThanks\nSinger: Thanks.",
+    "reward": 0.5
+  },
+  {
+    "query": "Thanks, my issue is already solved",
+    "category": "general",
+    "priority": "medium",
+    "response": "I'm getting a lot of feedback on it, but I'm still waiting for a followup\nIn case you're wondering, you should check out the FAQ\nThanks, my issue is already solved -",
+    "reward": 0.7000000000000001
+  },
+  {
+    "query": "Why was I charged AND the app crashed?",
+    "category": "general",
+    "priority": "medium",
+    "response": "If you're not able to access the app, that's fine. But I'm sorry. I'm not happy with that. I just wanted to help. So I've got you guys ready.\nThis is the first time I've been charged",
+    "reward": 0.5
+  },
+  {
+    "query": "This service is terrible!!!",
+    "category": "general",
+    "priority": "medium",
+    "response": "The service is buggy.",
+    "reward": 0.6000000000000001
+  },
+  {
+    "query": "Thanks, my issue is already solved",
+    "category": "general",
+    "priority": "medium",
+    "response": "Please contact us\nIf you have any questions, please contact me.",
+    "reward": 0.5
+  },
+  {
+    "query": "Refund me NOW or I will complain",
+    "category": "general",
+    "priority": "medium",
+    "response": "Unfavourite.",
+    "reward": 0.6000000000000001
+  },
+  {
+    "query": "Thanks, my issue is already solved",
+    "category": "general",
+    "priority": "medium",
+    "response": "Thank you, my issue is already solved\nThank you, my issue is already solved\nThank you, my issue is already solved\nPlease go back to the site, and keep updating for the future.\nThanks to Todu for the",
+    "reward": 0.7000000000000001
+  },
+  {
+    "query": "This service is terrible!!!",
+    "category": "general",
+    "priority": "medium",
+    "response": "I'm not really sure if you are using this service and can't reach me directly from the site. I am sorry if I miss you and we can't help you.\nThis service has been working for about six months now. Please note:",
+    "reward": 0.7000000000000001
+  },
+  {
+    "query": "Why was I charged AND the app crashed?",
+    "category": "general",
+    "priority": "medium",
+    "response": "I did not get any donations.",
+    "reward": 0.5
+  },
+  {
+    "query": "Refund me NOW or I will complain",
+    "category": "general",
+    "priority": "medium",
+    "response": "If you are not interested in this, please check out the free beta\nSupport",
+    "reward": 0.5
+  },
+  {
+    "query": "This service is terrible!!!",
+    "category": "general",
+    "priority": "medium",
+    "response": "We have a lot of support and will probably make a lot more effort to get this work done. Please follow the instructions on GitHub and follow the instructions on the forum.\nFor more information, please visit the Forum, or visit the Support page.",
+    "reward": 0.7000000000000001
+  },
+  {
+    "query": "I was charged twice for my order",
+    "category": "general",
+    "priority": "medium",
+    "response": "I can see the letter is an apology for the error.\nThanks for reading!",
+    "reward": 0.2
+  },
+  {
+    "query": "This service is terrible!!!",
+    "category": "general",
+    "priority": "medium",
+    "response": "1. It is not working for me.\n2. You are not allowed to use this service for any reason.\n3. It is not working for me.\n4. It is not working for me. This service is terrible!!!",
+    "reward": 0.6000000000000001
+  },
+  {
+    "query": "How do I update my profile?",
+    "category": "general",
+    "priority": "medium",
+    "response": "If you want to install the latest version of the website,",
+    "reward": 0.4
+  },
+  {
+    "query": "Login is not working on my phone",
+    "category": "general",
+    "priority": "medium",
+    "response": "Please don't send me an email for an update.",
+    "reward": 0.8
+  },
+  {
+    "query": "App crashes every time I open it",
+    "category": "general",
+    "priority": "medium",
+    "response": "I'm using the App Store in order to do a better job of trying to find the best possible solution to my problems.\nIf you enjoy this blog, please consider supporting us on Patreon!",
+    "reward": 0.5
+  },
+  {
+    "query": "This service is terrible!!!",
+    "category": "general",
+    "priority": "medium",
+    "response": "We have to make sure this service is working correctly!\nThe team is working on fixing this issue, but I will definitely try to make it work for future updates.\nI'm afraid this issue will become more common as a result of the server",
+    "reward": 0.6000000000000001
+  },
+  {
+    "query": "I was charged twice for my order",
+    "category": "general",
+    "priority": "medium",
+    "response": "Yes\nThank you all for your support.\nThis post was originally posted by the author.",
+    "reward": 0.5
+  },
+  {
+    "query": "This service is terrible!!!",
+    "category": "general",
+    "priority": "medium",
+    "response": "Please consider making a donation.\nThe site is being deleted.",
+    "reward": 0.7000000000000001
+  },
+  {
+    "query": "I was charged twice for my order",
+    "category": "general",
+    "priority": "medium",
+    "response": "Thank you for your support, I will be sending all my orders out to you.\nIn the meantime, I will be sending my orders out to you.",
+    "reward": 0.5
+  },
+  {
+    "query": "This service is terrible!!!",
+    "category": "general",
+    "priority": "medium",
+    "response": "This service is terrible!!!\nIf you are not using this service, please refer to the support page for further information.\nShare this: Twitter\n\nFacebook\n\n\n\n\n\n\n\n\nRelated",
+    "reward": 0.7000000000000001
+  },
+  {
+    "query": "How do I update my profile?",
+    "category": "general",
+    "priority": "medium",
+    "response": "I use a regular email client for notifications.\nDownload: http://march.org/file/paavel/MARCH/Paavel/Paavel\nSource: http://march.org/file/paavel",
+    "reward": 0.4
+  },
+  {
+    "query": "This service is terrible!!!",
+    "category": "general",
+    "priority": "medium",
+    "response": "If you want to add a support on the page you would have to remove this service\nPlease leave a comment below!",
+    "reward": 0.7000000000000001
+  },
+  {
+    "query": "Login is not working on my phone please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "Please reach out if you want to help my project.\nThank you for reading!",
+    "reward": 0.4
+  },
+  {
+    "query": "How do I delete my account? please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "Let's just do something\nIt will be a good idea to post on my social media page if I want to get a new account.\nHow do you make the account change?\nTo change my username, click here.",
+    "reward": 0.6000000000000001
+  },
+  {
+    "query": "How do I update my profile? please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "How can I keep my profile updated? please help\nWe don't really see any changes in the code, but there are a few changes in the code.\nPlease check out the new bug tracker and check out the new bug tracker.\nIf",
+    "reward": 0.7000000000000001
+  },
+  {
+    "query": "how do i update my profile? please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "i am happy to hear from you guys because i got a great job and i dont feel that my profile is getting better.\nPlease contact me first to help.",
+    "reward": 0.30000000000000004
+  },
+  {
+    "query": "login is not working on my phone please help asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "For now the support for this update is available but you need to upgrade to a different OS to get it working with the same OS\nThanks for your help and please help!",
+    "reward": 0.4
+  },
+  {
+    "query": "app freezes after login",
+    "category": "general",
+    "priority": "medium",
+    "response": "Thanks for reading!",
+    "reward": 0.5
+  },
+  {
+    "query": "URGENT: URGENT: Where can I change my password? asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "I wish I would have done this earlier. I\u2019ve been a bit lazy since the first release because I don't want to be left with a password for a while longer.\nI\u2019ve been looking for a ways to replace my",
+    "reward": 0.6000000000000001
+  },
+  {
+    "query": "thanks, my issue is already solved",
+    "category": "general",
+    "priority": "medium",
+    "response": "please do this if you have any issues.",
+    "reward": 0.5
+  },
+  {
+    "query": "URGENT: Cannot reset my password",
+    "category": "general",
+    "priority": "medium",
+    "response": ": [ ] Moved to the original version of this post.",
+    "reward": 0.6000000000000001
+  },
+  {
+    "query": "URGENT: refund me now or i will complain",
+    "category": "general",
+    "priority": "medium",
+    "response": "Pipe:\nFollow:\nFollow:",
+    "reward": 0.4
+  },
+  {
+    "query": "thanks, my issue is already solved please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "https://support.github.com/nashmikos/nashmikos-support/",
+    "reward": 0.6000000000000001
+  },
+  {
+    "query": "login is not working on my phone please help asap asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "Thanks for taking the time to tell me what you think.",
+    "reward": 0.4
+  },
+  {
+    "query": "URGENT: I was charged twice for my order asap please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "Thanks again",
+    "reward": 0.7000000000000001
+  },
+  {
+    "query": "urgent: refund me now or i will complain",
+    "category": "general",
+    "priority": "medium",
+    "response": "refund me now or i will complain",
+    "reward": 0.6000000000000001
+  },
+  {
+    "query": "URGENT: URGENT: This service is terrible!!!",
+    "category": "general",
+    "priority": "medium",
+    "response": "1.0 / 2.4 / 3.5 / 4.5 / 6.5 / 7.5 / 8.5 / 9.5 / 10.5 / 11.5 / 12.5 / 13.5 / 14.",
+    "reward": 0.6000000000000001
+  },
+  {
+    "query": "URGENT: Subscription cancelled but still charged please help asap please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "Please help if you have an issue with your subscription.\nWhat can you do to help the process?",
+    "reward": 0.2
+  },
+  {
+    "query": "URGENT: URGENT: Payment failed but money deducted please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "Please do not hesitate to let us know if you have any questions.\nPlease reach out to us by email if you find any further information.",
+    "reward": 0.5
+  },
+  {
+    "query": "URGENT: Why was I charged AND the app crashed? asap please help asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "Thanks so much",
+    "reward": 0.5
+  },
+  {
+    "query": "URGENT: Cannot reset my password asap asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "No support for GSSR",
+    "reward": 0.6000000000000001
+  },
+  {
+    "query": "URGENT: Subscription cancelled but still charged please help asap please help asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "Please make a donation to support this project of the future",
+    "reward": 0.2
+  },
+  {
+    "query": "URGENT: URGENT: Payment failed but money deducted please help asap please help asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "Thanks for the help.",
+    "reward": 0.5
+  },
+  {
+    "query": "URGENT: URGENT: how do i update my profile? please help asap please help please help please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "If you want to help, please try my site.",
+    "reward": 0.7000000000000001
+  },
+  {
+    "query": "urgent: cannot reset my password asap asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "not working with the application. Thanks!",
+    "reward": 0.7000000000000001
+  },
+  {
+    "query": "URGENT: urgent: urgent: where can i change my password? asap asap asap please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "Thanks for reading! Happy coding!",
+    "reward": 0.30000000000000004
+  },
+  {
+    "query": "urgent: urgent: urgent: this service is terrible!!! asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "help: is still working.",
+    "reward": 0.6000000000000001
+  },
+  {
+    "query": "URGENT: Subscription cancelled but still charged please help asap please help asap asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "Thank you so much and I\u2039m happy to be able to send this to you.\nThank you for your support!\nThe whole world is so happy to be able to help!\nThank you,\nWe have got to get",
+    "reward": 0.5
+  },
+  {
+    "query": "URGENT: urgent: app crashes every time i open it please help please help asap asap asap asap please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "Thank you guys for coming up with the solution for my problem.\nIf you are curious, I would like to see your help asap and make sure your problems are solved before going too far.",
+    "reward": 0.7000000000000001
+  },
+  {
+    "query": "urgent: urgent: why was i charged and the app crashed? asap please help asap please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "sorry for the error\nPlease contact us if you have any issues.",
+    "reward": 0.5
+  },
+  {
+    "query": "URGENT: thanks, my issue is already solved please help please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "Thanks!",
+    "reward": 0.5
+  },
+  {
+    "query": "urgent: subscription cancelled but still charged please help asap please help asap asap please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "Thanks for checking out the service and help.",
+    "reward": 0.7000000000000001
+  },
+  {
+    "query": "urgent: login is not working on my phone please help asap asap asap asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "Please make sure to contact me",
+    "reward": 0.5
+  },
+  {
+    "query": "urgent: subscription cancelled but still charged please help asap please help asap asap please help asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "Please help byap\nHelp: Please help byap\nThank you for your help\nThank you for your help",
+    "reward": 0.8
+  },
+  {
+    "query": "URGENT: urgent: i was charged twice for my order asap please help please help please help asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "$45,000 for the next 11 hours of the day\nThe website is full of updates.\nDonate\nPlease check it out if you have any questions or suggestions or queries.",
+    "reward": 0.2
+  },
+  {
+    "query": "URGENT: app freezes after login asap asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "The app freezes after login asap for the user.\nSource: http://www.youtube.com/watch?v=GcQeZcV7dI",
+    "reward": 0.4
+  },
+  {
+    "query": "URGENT: urgent: i want a refund for my subscription asap asap please help please help asap asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "Thanks for reading!\n(Thanks!)",
+    "reward": 0.2
+  },
+  {
+    "query": "urgent: urgent: urgent: this service is terrible!!! asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "please go to the Support.org page\nThis service is not the first time you will be able to get it. In the past, we've seen the service getting broken. Some people have been able to get it through the web, as well",
+    "reward": 0.7000000000000001
+  },
+  {
+    "query": "URGENT: urgent: urgent: urgent: this service is terrible!!! asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "[username=mikelle/en/email]",
+    "reward": 0.6000000000000001
+  },
+  {
+    "query": "URGENT: app freezes after login asap asap asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "- Support for the new option to toggle the application from the user interface\n- Support for the new option to toggle the application from the user interface support\n- Support for the new option to toggle the application from the user interface support\n- Support",
+    "reward": 0.6000000000000001
+  },
+  {
+    "query": "urgent: urgent: how do i delete my account? please help please help asap asap asap please help please help please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "we can help you remove your account. please help please help\nWe can help you remove your account. please help\nWe can help you remove your account. please help",
+    "reward": 0.7000000000000001
+  },
+  {
+    "query": "URGENT: URGENT: urgent: urgent: why was i charged and the app crashed? asap please help asap please help asap asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "https://goo.gl/5JgVY",
+    "reward": 0.5
+  },
+  {
+    "query": "URGENT: URGENT: URGENT: UI looks broken on my screen asap asap please help asap asap please help please help asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "If you want to donate, please check out the support page.",
+    "reward": 0.4
+  },
+  {
+    "query": "URGENT: urgent: urgent: i want a refund for my subscription asap asap please help please help asap asap please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "Thanks for your support!",
+    "reward": 0.7000000000000001
+  },
+  {
+    "query": "urgent: urgent: login is not working on my phone please help asap asap asap asap please help please help asap please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "If you have any questions please leave a message, I will send it to you asap,",
+    "reward": 0.5
+  },
+  {
+    "query": "URGENT: URGENT: URGENT: URGENT: Payment failed but money deducted please help asap please help asap asap asap please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "Please use the following links to help me to create a better account.\nThis is a very simple and simple project.\nIf you have any questions or feedback about this project, send me an email.\nThank you",
+    "reward": 0.30000000000000004
+  },
+  {
+    "query": "URGENT: URGENT: URGENT: URGENT: UI looks broken on my screen asap asap please help asap asap please help please help asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "https://github.com/craken/nagetails-bug-fix and I'll do more to help.",
+    "reward": 0.6000000000000001
+  },
+  {
+    "query": "URGENT: URGENT: urgent: urgent: why was i charged and the app crashed? asap please help asap please help asap asap please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "please help please support asap please help asap please help asap please help asap please help asap please help asap please help asap please help asap please help asap please help asap please help asap please help asap",
+    "reward": 0.7000000000000001
+  },
+  {
+    "query": "URGENT: URGENT: URGENT: urgent: urgent: urgent: this service is terrible!!! asap please help asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "no, if you can help, thank you\nContact:\nContact:\nPlease read the site for all the details.\nPlease use the email address provided for this service but not for the mailing list.\nWe do not accept payment from money",
+    "reward": 0.7000000000000001
+  },
+  {
+    "query": "URGENT: URGENT: URGENT: URGENT: URGENT: UI looks broken on my screen asap asap please help asap asap please help please help asap please help asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "Please check with our users and let us know if we have any issues.",
+    "reward": 0.4
+  },
+  {
+    "query": "urgent: urgent: urgent: urgent: urgent: urgent: this service is terrible!!! asap please help asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "please help asap\nHelp: you can help asap\nSending help\nPlease donate to our site to help provide assistance\nHelp: you can help asap\nThank you for supporting our site. Help is very important to us.",
+    "reward": 0.7000000000000001
+  },
+  {
+    "query": "URGENT: URGENT: urgent: i was charged twice for my order asap please help please help please help asap please help asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "Please support the site by donating\nWe are still considering if we can help in any way.",
+    "reward": 0.4
+  },
+  {
+    "query": "urgent: urgent: urgent: urgent: urgent: urgent: this service is terrible!!! asap please help asap please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "https://www.patreon.com/jailie_neighbour",
+    "reward": 0.6000000000000001
+  },
+  {
+    "query": "urgent: urgent: urgent: urgent: payment failed but money deducted please help asap please help asap asap asap please help please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "please help asap please help asap please help asap please help asap please help asap please help asap please help asap please help asap please help asap please help asap please help asap please help asap please help",
+    "reward": 0.30000000000000004
+  },
+  {
+    "query": "urgent: urgent: urgent: urgent: urgent: urgent: this service is terrible!!! asap please help asap please help please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "great, happy, well",
+    "reward": 0.6000000000000001
+  },
+  {
+    "query": "urgent: urgent: urgent: urgent: urgent: urgent: this service is terrible!!! asap please help asap please help please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "(Received: 08/17/2017 by: jessie@gmail.com)",
+    "reward": 0.6000000000000001
+  },
+  {
+    "query": "urgent: urgent: urgent: thanks, my issue is already solved please help please help asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "please help asap\nIf you can help me please help me please help asap\nThank you for supporting me please help asap\nPlease help asap",
+    "reward": 0.7000000000000001
+  },
+  {
+    "query": "URGENT: urgent: urgent: urgent: urgent: why was i charged and the app crashed? asap please help asap please help asap asap please help asap asap asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "support: please help asap help asap please help asap please help asap please help asap please help asap please help asap please help asap please help asap please help asap please help asap please help asap please",
+    "reward": 0.6
+  },
+  {
+    "query": "URGENT: URGENT: urgent: subscription cancelled but still charged please help asap please help asap asap please help asap please help asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "Please give feedback asap if you'd like to help with the issue.\nPlease give feedback asap if you'd like to help with the issue.\nThank you very much!\nThank you very much!",
+    "reward": 0.7000000000000001
+  },
+  {
+    "query": "urgent: urgent: urgent: login is not working on my phone please help asap asap asap asap please help please help asap please help please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "support support is limited but please please help with any issues please reach me via email.",
+    "reward": 0.7000000000000001
+  },
+  {
+    "query": "urgent: urgent: urgent: thanks, my issue is already solved please help please help asap please help please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "please let me know what you think\nFeel free to leave a comment below!",
+    "reward": 0.5
+  },
+  {
+    "query": "urgent: urgent: urgent: urgent: urgent: urgent: urgent: where can i change my password? asap asap asap please help asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "https://www.facebook.com/search?search=search_content?search=search_content?search=search_content?search=search_content?search=search_content?search=search_content?search=search_",
+    "reward": 0.4
+  },
+  {
+    "query": "urgent: urgent: urgent: urgent: payment failed but money deducted please help asap please help asap asap asap please help please help please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "Please help me out if you need help",
+    "reward": 0.7000000000000001
+  },
+  {
+    "query": "URGENT: URGENT: URGENT: urgent: cannot reset my password asap asap please help asap asap please help please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "please help in any way I can help with any way I can help with any way I can help with any way I can help with any way I can help with any way I can help with any way I can help with any way I can help",
+    "reward": 0.7000000000000001
+  },
+  {
+    "query": "URGENT: URGENT: URGENT: URGENT: URGENT: URGENT: urgent: app crashes every time i open it please help please help asap asap asap asap please help please help please help please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "If you are interested in helping me, I am happy to help.",
+    "reward": 0.4
+  },
+  {
+    "query": "URGENT: urgent: urgent: urgent: how do i update my profile? please help asap please help please help please help asap asap please help please help asap asap asap asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "no need to stop me from running again please help asap please help asap please help asap please help asap please help asap please help asap please help asap please help asap please help asap please help asap please help",
+    "reward": 0.30000000000000004
+  },
+  {
+    "query": "URGENT: urgent: urgent: urgent: refund me now or i will complain asap please help asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "please feel free to leave a comment",
+    "reward": 0.5
+  },
+  {
+    "query": "urgent: urgent: urgent: thanks, my issue is already solved please help please help asap please help please help please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "please help\nPlease help, please help, please help, please help, please help, please help, please help, please help, please help, please help, please help, please help, please help, please help, please help, please help",
+    "reward": 0.7000000000000001
+  },
+  {
+    "query": "urgent: urgent: urgent: login is not working on my phone please help asap asap asap asap please help please help asap please help please help please help please help asap please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "Please do not use the link for my phone please just ask for help please help please help asap please help please help please help please help please help please help please help please help please help please help please help please help please help please help please help",
+    "reward": 0.4
+  },
+  {
+    "query": "urgent: urgent: urgent: urgent: urgent: urgent: urgent: where can i change my password? asap asap asap please help asap please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "This post was started on a 4th of July 2015. It is now over.\nPlease send me your feedback, thanks for reading.",
+    "reward": 0.6
+  },
+  {
+    "query": "urgent: urgent: urgent: urgent: refund me now or i will complain asap please help asap asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "please help: please help: please help: please help: please help: please help: please help: please help: please help: please help: please help: please help: please help: please help: please help: please help: please help",
+    "reward": 0.7000000000000001
+  },
+  {
+    "query": "URGENT: URGENT: URGENT: URGENT: urgent: cannot reset my password asap asap please help asap asap please help please help please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "Please help me by typing this in the main window of your browser: http://www.gawker.com/support/php?topic=15796975",
+    "reward": 0.7000000000000001
+  },
+  {
+    "query": "urgent: urgent: urgent: urgent: subscription cancelled but still charged please help asap please help asap asap please help asap please help asap please help please help please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "help.\nPlease be aware that the link is not working.\nThanks to the anonymous user:",
+    "reward": 0.7000000000000001
+  },
+  {
+    "query": "URGENT: urgent: urgent: urgent: urgent: urgent: urgent: urgent: where can i change my password? asap asap asap please help asap please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "please help asap please help asap please help asap please help asap please help asap please help asap please help asap please help asap please help asap please help asap please help asap please help asap please help",
+    "reward": 0.6
+  },
+  {
+    "query": "URGENT: urgent: urgent: urgent: how do i delete my account? please help please help asap asap asap please help please help please help please help please help asap",
+    "category": "general",
+    "priority": "medium",
+    "response": "https://twitter.com/SuguGamers\nI am looking for a guy that can take care of me and help me with this.I am hoping that the help that I have in mind will lead to better day-to-day",
+    "reward": 0.6000000000000001
+  },
+  {
+    "query": "urgent: urgent: urgent: urgent: urgent: i was charged twice for my order asap please help please help please help asap please help asap please help asap asap please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "Help:\nHelp:\nPlease help:Please help:please help:Please help:Please help:Please help:Please help:Please help:Please help:Please help:Please help:Please help:Please help:Please",
+    "reward": 0.7000000000000001
+  },
+  {
+    "query": "urgent: urgent: urgent: urgent: urgent: urgent: urgent: urgent: app crashes every time i open it please help please help asap asap asap asap please help please help please help please help please help asap please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "for the first time, we are also making improvements to our support page and our support page. The bug fixes are being worked on the other side.\nOn the second day of the month, we have been working on a new and improved design.",
+    "reward": 0.6000000000000001
+  },
+  {
+    "query": "urgent: urgent: urgent: urgent: urgent: how do i update my profile? please help asap please help please help please help asap asap please help please help asap asap asap asap asap please help",
+    "category": "general",
+    "priority": "medium",
+    "response": "Please help me with my email address if you need help please help and I can give you a link.",
+    "reward": 0.7000000000000001
+  }
+]

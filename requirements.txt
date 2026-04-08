@@ -1,0 +1,9 @@
+openai
+transformers
+datasets
+trl
+torch
+fastapi
+uvicorn
+openenv---
+

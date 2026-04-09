@@ -1,3 +1,27 @@
+spec_version: 1
 name: customer_support_env
-version: "1.0"
-description: Customer support agent simulation
+type: environment
+description: >
+  Customer support RL environment. The agent classifies tickets
+  (billing / technical / general), assigns priority, and generates
+  a helpful response. Rewards are strictly between 0 and 1.
+
+runtime:
+  app: server.app:app
+  port: 8000
+
+tasks:
+  - id: billing_support
+    name: Billing Support
+    description: Handle billing queries such as refunds and double charges.
+    grader: /grader
+
+  - id: technical_support
+    name: Technical Support
+    description: Handle technical issues such as crashes and login failures.
+    grader: /grader
+
+  - id: general_support
+    name: General Support
+    description: Handle general queries such as password reset and account help.
+    grader: /grader

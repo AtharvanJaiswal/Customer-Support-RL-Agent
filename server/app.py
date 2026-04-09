@@ -1,16 +1,14 @@
 from openenv.core.env_server import create_fastapi_app
-
 from environment import CustomerSupportEnv
 from models import SupportAction, SupportObservation
+import uvicorn
 
-# Create OpenEnv app
 app = create_fastapi_app(
     CustomerSupportEnv,
     SupportAction,
     SupportObservation
 )
 
-# ✅ ADD ROOT ROUTE HERE (THIS IS THE REAL FIX)
 @app.get("/")
 def root():
     return {
@@ -19,3 +17,11 @@ def root():
         "reset": "/reset",
         "step": "/step"
     }
+
+# ✅ REQUIRED for OpenEnv
+def main():
+    uvicorn.run(app, host="0.0.0.0", port=7860)
+
+# ✅ REQUIRED ENTRY POINT
+if __name__ == "__main__":
+    main()

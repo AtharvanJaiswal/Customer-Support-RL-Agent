@@ -37,7 +37,7 @@ def is_valid_response(text):
     return True
 
 async def run_grpo():
-    env = CustomerSupportClient(base_url="http://localhost:8000")
+    env = CustomerSupportClient(base_url="https://athiJais-customer-support-rl-agent.hf.space")
 
     dataset = []
 

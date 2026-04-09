@@ -3,49 +3,7 @@ Task definitions with deterministic graders.
 Each grader returns a score strictly between 0 and 1 (0.001 – 0.999).
 """
 
-TASKS = {
-    "billing_support": {
-        "id": "billing_support",
-        "name": "Billing Support",
-        "description": "Handle billing queries: refunds, double charges, payment failures.",
-        "difficulty": "medium",
-        "sample_query": "I was charged twice for my order",
-        "expected_category": "billing",
-        "expected_priority": "high",
-        "keywords": ["refund", "charged", "payment", "subscription"],
-    },
-    "technical_support": {
-        "id": "technical_support",
-        "name": "Technical Support",
-        "description": "Handle technical issues: crashes, login failures, UI bugs.",
-        "difficulty": "medium",
-        "sample_query": "App crashes every time I open it",
-        "expected_category": "technical",
-        "expected_priority": "high",
-        "keywords": ["crash", "error", "login", "freeze", "bug"],
-    },
-    "general_support": {
-        "id": "general_support",
-        "name": "General Support",
-        "description": "Handle general queries: account management, password reset, how-to.",
-        "difficulty": "easy",
-        "sample_query": "How do I reset my password?",
-        "expected_category": "general",
-        "expected_priority": "low",
-        "keywords": ["password", "account", "delete", "how", "help"],
-    },
-}
-
-
-def grade(task_id: str, action: dict) -> float:
-    """
-    Grade an action against a task.
-    Returns a score strictly between 0 and 1 (0.001 – 0.999).
-    """
-    task = TASKS.get(task_id)
-    if task is None:
-        return 0.1
-
+def grading_logic(task, action):
     score = 0.0
 
     category = action.get("category", "")
@@ -79,7 +37,40 @@ def grade(task_id: str, action: dict) -> float:
     if len(response.strip()) < 10:
         score -= 0.15
 
-    # Clamp strictly between 0 and 1
+    # Clamp strictly between (0, 1)
     score = max(0.001, min(score, 0.999))
-
     return round(score, 4)
+
+
+# Individual graders (IMPORTANT)
+def billing_grader(obs, action):
+    return grading_logic(TASKS["billing_support"], action)
+
+def technical_grader(obs, action):
+    return grading_logic(TASKS["technical_support"], action)
+
+def general_grader(obs, action):
+    return grading_logic(TASKS["general_support"], action)
+
+
+# Tasks WITH graders attached
+TASKS = [
+    {
+        "id": "billing_support",
+        "name": "Billing Support",
+        "description": "Handle billing queries",
+        "grader": billing_grader,
+    },
+    {
+        "id": "technical_support",
+        "name": "Technical Support",
+        "description": "Handle technical issues",
+        "grader": technical_grader,
+    },
+    {
+        "id": "general_support",
+        "name": "General Support",
+        "description": "Handle general queries",
+        "grader": general_grader,
+    },
+]

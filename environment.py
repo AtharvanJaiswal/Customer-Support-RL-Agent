@@ -1,6 +1,7 @@
 import uuid
 import random
 from openenv.core.env_server import Environment
+from task_definitions import get_tasks
 
 try:
     from models import SupportAction, SupportObservation, SupportState
@@ -38,7 +39,7 @@ TICKETS = [
 class CustomerSupportEnv(Environment):
 
     def get_task(self):
-        return None  # ensures reward-only mode
+        return get_tasks()
 
     def __init__(self):
         self._state = SupportState()

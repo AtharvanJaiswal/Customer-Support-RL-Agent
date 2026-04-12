@@ -5,3 +5,6 @@ type: environment
 runtime:
   app: server.app:app
   port: 8000
+
+tasks:
+  source: task_definitions:get_tasks

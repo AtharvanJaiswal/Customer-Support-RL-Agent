@@ -5,15 +5,15 @@ def safe_score(x):
 def billing_grader(obs, action):
     score = 0.5
 
-    if action.get("category") == "billing":
+    if action.category == "billing":
         score += 0.3
     else:
         score -= 0.1
 
-    if action.get("priority") == "high":
+    if action.priority == "high":
         score += 0.1
 
-    if "refund" in (action.get("response") or "").lower():
+    if "refund" in (action.response or "").lower():
         score += 0.1
 
     return safe_score(score)
@@ -22,15 +22,15 @@ def billing_grader(obs, action):
 def technical_grader(obs, action):
     score = 0.5
 
-    if action.get("category") == "technical":
+    if action.category == "technical":
         score += 0.3
     else:
         score -= 0.1
 
-    if action.get("priority") == "high":
+    if action.priority == "high":
         score += 0.1
 
-    if "error" in (action.get("response") or "").lower():
+    if "error" in (action.response or "").lower():
         score += 0.1
 
     return safe_score(score)
@@ -39,15 +39,15 @@ def technical_grader(obs, action):
 def general_grader(obs, action):
     score = 0.5
 
-    if action.get("category") == "general":
+    if action.category == "general":
         score += 0.3
     else:
         score -= 0.1
 
-    if action.get("priority") in ["low", "medium"]:
+    if action.priority in ["low", "medium"]:
         score += 0.1
 
-    if "help" in (action.get("response") or "").lower():
+    if "help" in (action.response or "").lower():
         score += 0.1
 
     return safe_score(score)

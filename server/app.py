@@ -18,10 +18,15 @@ def root():
         "step": "/step"
     }
 
+# ✅ ADD THIS (CRITICAL FIX)
+@app.get("/tasks")
+def get_tasks():
+    return []
+
 # ✅ REQUIRED for OpenEnv
 def main():
     uvicorn.run(app, host="0.0.0.0", port=7860)
 
-# ✅ REQUIRED ENTRY POINT
+# ✅ ENTRY POINT
 if __name__ == "__main__":
     main()

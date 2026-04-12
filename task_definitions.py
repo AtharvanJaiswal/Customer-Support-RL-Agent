@@ -25,46 +25,55 @@ def grading_logic(task, action):
     if len(response) > 10:
         score += 0.1
 
-    return min(max(score, 0.01), 0.99)
+    # 🚨 CRITICAL: never allow 0 or 1
+    score = max(0.05, min(score, 0.95))
+    return score
 
 
-# ✅ REQUIRED: function returning tasks
+# ✅ Named graders (IMPORTANT)
+def billing_grader(obs, action):
+    return grading_logic({
+        "expected_category": "billing",
+        "expected_priority": "high",
+        "keywords": ["refund", "charged"]
+    }, action)
+
+
+def technical_grader(obs, action):
+    return grading_logic({
+        "expected_category": "technical",
+        "expected_priority": "high",
+        "keywords": ["crash", "error"]
+    }, action)
+
+
+def general_grader(obs, action):
+    return grading_logic({
+        "expected_category": "general",
+        "expected_priority": "low",
+        "keywords": ["help", "account"]
+    }, action)
+
+
+# ✅ REQUIRED FUNCTION
 def get_tasks():
     return [
         {
             "id": "billing_support",
+            "name": "Billing Support",  # ✅ ADD THIS
             "description": "Billing issues",
-            "expected_category": "billing",
-            "expected_priority": "high",
-            "keywords": ["refund", "charged"],
-            "grader": lambda obs, action: grading_logic({
-                "expected_category": "billing",
-                "expected_priority": "high",
-                "keywords": ["refund", "charged"]
-            }, action)
+            "grader": billing_grader,
         },
         {
             "id": "technical_support",
+            "name": "Technical Support",  # ✅ ADD THIS
             "description": "Technical issues",
-            "expected_category": "technical",
-            "expected_priority": "high",
-            "keywords": ["crash", "error"],
-            "grader": lambda obs, action: grading_logic({
-                "expected_category": "technical",
-                "expected_priority": "high",
-                "keywords": ["crash", "error"]
-            }, action)
+            "grader": technical_grader,
         },
         {
             "id": "general_support",
+            "name": "General Support",  # ✅ ADD THIS
             "description": "General queries",
-            "expected_category": "general",
-            "expected_priority": "low",
-            "keywords": ["help", "account"],
-            "grader": lambda obs, action: grading_logic({
-                "expected_category": "general",
-                "expected_priority": "low",
-                "keywords": ["help", "account"]
-            }, action)
+            "grader": general_grader,
         }
     ]

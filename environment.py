@@ -1,6 +1,6 @@
 import uuid
 import random
-
+from task_definitions import get_tasks
 from openenv.core.env_server import Environment
 
 try:
@@ -36,6 +36,9 @@ TICKETS = [
 
 
 class CustomerSupportEnv(Environment):
+
+    def get_tasks(self):
+       return get_tasks()
 
     def __init__(self):
         self._state = SupportState()

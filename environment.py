@@ -38,7 +38,7 @@ TICKETS = [
 
 class CustomerSupportEnv(Environment):
 
-    def get_task(self):
+    def get_tasks(self):
         return get_tasks()
 
     def __init__(self):

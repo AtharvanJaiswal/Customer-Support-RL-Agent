@@ -1,6 +1,5 @@
 import uuid
 import random
-from task_definitions import get_tasks
 from openenv.core.env_server import Environment
 
 try:
@@ -37,8 +36,7 @@ TICKETS = [
 
 class CustomerSupportEnv(Environment):
 
-    def get_tasks(self):
-       return get_tasks()
+    
 
     def __init__(self):
         self._state = SupportState()
@@ -86,7 +84,7 @@ class CustomerSupportEnv(Environment):
 
         self._state.step_count += 1
         expected = self._current
-        reward = 0.0
+        reward = 0.5
 
         VALID_CATEGORIES = ["billing", "technical", "general"]
         VALID_PRIORITIES = ["low", "medium", "high"]
@@ -137,7 +135,7 @@ class CustomerSupportEnv(Environment):
             query = self._current["query"]
 
         # Strictly between 0 and 1
-        reward = max(0.001, min(reward, 0.999))
+        reward = max(0.05, min(reward, 0.95))
 
         return SupportObservation(
             ticket_id=str(self._index),

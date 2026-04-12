@@ -1,12 +1,7 @@
 spec_version: 1
 name: customer_support_env
 type: environment
-description: >
-  Customer support RL environment.
 
 runtime:
   app: server.app:app
   port: 8000
-
-tasks:
-  source: task_definitions:get_tasks
